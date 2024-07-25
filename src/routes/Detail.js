@@ -16,7 +16,7 @@ function mapStateToProps(state, ownProps) {
       params: {id}
     }
   } = ownProps;
-  return {toDOs: state.find(toDo => toDo.id === parseInt(id))}
+  return {toDos: state.find(toDo => toDo.id === parseInt(id))}
 }
 
 export default connect(mapStateToProps) (Detail);
